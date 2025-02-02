@@ -5,53 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Submission Page</title>
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
       body {
-        font-family: Arial, sans-serif;
+        font-family: "Montserrat", sans-serif;
         margin: 0;
         padding: 0;
         background-color: #f4f4f4;
+        text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
       }
+
       .main {
-        background: linear-gradient(90deg, #2b2ba4, #0d83aa);
+        background: rgb(238,174,202);
+        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5rem;
         color: #fff;
         padding: 10px 0;
         text-align: center;
         height: 100vh;
       }
-      .assignments {
-        margin: 20px;
-        text-align: center;
+
+      .hero h1 {
+        font-size: 4rem;
+        margin: 0;
       }
+
+      .hero h1 span {
+        background: linear-gradient(45deg, #f46a6f, #f7b6a4, #eb79cb, #6ba1fe);
+        background-clip: text;
+        color: transparent;
+      }
+
+      .hero .id {
+        font-size: 1.5rem;
+        margin: 1.5rem 0;
+        font-style: italic;
+      }
+
+      .hero .desc {
+        font-size: 1.2rem;
+        margin-top: 4rem;
+      }
+
+      .assignments {
+        text-align: center;
+        flex-wrap: wrap;
+      }
+      
       .assignments a {
-        margin: 0 15px;
+        display: inline-block;
+        margin: 15px;
         padding: 10px 20px;
         border: 1px solid #fff;
+        border-radius: 3px;
         text-decoration: none;
         color: #fff;
         font-weight: bold;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+        transition: 0.3s;
       }
+
       .assignments a:hover {
-        color: #007bff;
-      }
-      .container {
-        padding: 20px;
-      }
-      .assignment-link {
-        display: block;
-        margin: 10px 0;
-        color: #007bff;
-        text-decoration: none;
-      }
-      .assignment-link:hover {
-        text-decoration: underline;
+        color: #c4d3d3;
+        transform: translateY(-2px);
       }
     </style>
   </head>
   <body>
     <div class="main">
       <div class="hero">
-        <h1>My Name is Chris Ebube Roland</h1>
-        <p>ALT/SOE/024/0376</p>
+        <h1>My Name is <span>Chris Ebube Roland</span></h1>
+        <p class="id">ALT/SOE/024/0376</p>
+        <p class="desc">Below are the links to my CSS assignments</p>
       </div>
 
       <div class="assignments">
